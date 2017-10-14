@@ -1,0 +1,217 @@
+<div class="home-page">
+    <div class="banner">
+        <div class="overlay"></div>
+    </div>
+    <div class="dashboard-sliders" id="top-section">
+        <div class="categories-sliders mainContainer" ng-repeat="offer in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>Offer Zone</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="offer{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="offerproduct in offer.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ offerproduct.offerImage }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ offerproduct.offer }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 32000</span>
+                                        <span class="final-price">Rs 26000</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="newarrival in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>New Arrival</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="newarrival{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="newarrivalproduct in newarrival.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ newarrivalproduct.newImage }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ newarrivalproduct.new }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 1100</span>
+                                        <span class="final-price">Rs 1096</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="x in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>{{ x.name }}</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="owl-example{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="y in x.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ y.image }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ y.name }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 500</span>
+                                        <span class="final-price">Rs 400</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="a in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>{{ a.name1 }}</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="owl-example1{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="b in a.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ b.image1 }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ b.name1 }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 1200</span>
+                                        <span class="final-price">Rs 900</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="c in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>{{ c.name2 }}</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="owl-example2{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="d in c.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ d.image2 }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ d.name2 }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 600</span>
+                                        <span class="final-price">Rs 400</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="e in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>{{ e.name3 }}</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="owl-example3{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="f in e.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ f.image3 }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ f.name3 }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 500</span>
+                                        <span class="final-price">Rs 400</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-sliders mainContainer" ng-repeat="g in vm.dummyJson">
+            <div class="shops-container">
+                <div class="shop-type-heading pull-left">
+                    <h3>{{ g.name4 }}</h3>
+                </div>
+                <div class="view-all-shops-button">
+                    <a href="#/view-all-shops">View All</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="shops-list">
+                    <div class="shops-list-slider">
+                        <div id="owl-example4{{ $index }}" class="owl-carousel">
+                            <div class="shops-list-slider-item" ng-click="openShop()" ng-repeat="h in g.shop">
+                                <div class="shops-list-item-image"><img ng-src="{{ h.image4 }}" alt="shop-logo"></div>
+                                <div class="item-details">
+                                    <p class="item-name">{{ h.name4 }}</p>
+                                    <p class="item-price">
+                                        <span class="actual-price">Rs 500</span>
+                                        <span class="final-price">Rs 400</span>
+                                    </p>
+                                </div>
+                                <div class="add-cart-button">
+                                    <a href="#">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

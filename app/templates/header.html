@@ -1,0 +1,61 @@
+<header>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false"
+                    aria-controls="main-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a href="#/dashboard" class="navbar-brand logo">
+                        <img src="app/content/img/logo.jpg" alt="Logo Image">
+                    </a>
+            </div>
+            <div class="header-right collapse navbar-collapse pull-right" id="main-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a is-active-nav href="#/dashboard">Home</a></li>
+                    <li><a is-active-nav href="#/contact">Contact</a></li>
+                    <li><a is-active-nav href="#/about">About Us</a></li>
+                    <!-- <li><a is-active-nav href="#/update-profile">Update Profile</a></li> -->
+                    <!-- <li><a is-active-nav href="#/changepassword">Change Password</a></li> -->
+                    <li class="sub-menu-dropdown">
+                        <div class="dropdown">
+                          Signup
+                            <div class="dropdown-content">
+                                <a is-active-nav href="#">SignUp As Customer</a>
+                                <a is-active-nav href="#/register">SignUp As Vendor</a>
+                                <a is-active-nav href="#/register">SignUp As Partner</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub-menu-dropdown">
+                        <div class="dropdown">
+                            Login
+                              <div class="dropdown-content">
+                                <a is-active-nav href="#">Login As User</a>
+                                <a is-active-nav href="#/login">Login As Vendor</a>
+                                <a is-active-nav href="#/login">Login As Partner</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li><a is-active-nav href="#/" ng-click="logout()">Logout</a></li> -->
+                </ul>
+            </div>
+            <div class="cart-button pull-right">
+                <a href="#">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Cart
+                    <span class="cart-value">(0)</span>
+                </a>
+            </div>
+            <div class="search-field-box pull-right">
+                <div class="form-group search-field">
+                        <input type="text" my-enter="searchValueCall()" class="form-control" ng-model="searchValue" placeholder="Search">
+                    <button type="button" ng-click="searchValueCall()"></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

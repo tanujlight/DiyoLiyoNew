@@ -1,0 +1,121 @@
+/* Fonts */
+@font-face {
+    font-family: 'font_light';
+    src: url('../fonts/OpenSans/OpenSansLightwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansLightwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansLightwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansLightwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansLightwebfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_light_italic';
+    src: url('../fonts/OpenSans/OpenSansLightItalicwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansLightItalicwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansLightItalicwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansLightItalicwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansLightItalicwebfont.svg#open_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_normal';
+    src: url('../fonts/OpenSans/OpenSansRegularwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansRegularwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansRegularwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansRegularwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansRegularwebfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_italic';
+    src: url('../fonts/OpenSans/OpenSansItalicwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansItalicwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansItalicwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansItalicwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansItalicwebfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'font_semibold';
+    src: url('../fonts/OpenSans/OpenSansSemiboldwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansSemiboldwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansSemiboldwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansSemiboldwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansSemiboldwebfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_semibold_italic';
+    src: url('../fonts/OpenSans/OpenSansSemiboldItalicwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansSemiboldItalicwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansSemiboldItalicwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansSemiboldItalicwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansSemiboldItalicwebfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_bold';
+    src: url('../fonts/OpenSans/OpenSansBoldwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansBoldwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansBoldwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansBoldwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansBoldwebfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_bold_italic';
+    src: url('../fonts/OpenSans/OpenSansBoldItalicwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansBoldItalicwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansBoldItalicwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansBoldItalicwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansBoldItalicwebfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_extrabold';
+    src: url('../fonts/OpenSans/OpenSansExtraBoldwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansExtraBoldwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansExtraBoldwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansExtraBoldwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansExtraBoldwebfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'font_extrabold_italic';
+    src: url('../fonts/OpenSans/OpenSansExtraBoldItalicwebfont.eot');
+    src: url('../fonts/OpenSans/OpenSansExtraBoldItalicwebfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansExtraBoldItalicwebfont.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansExtraBoldItalicwebfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansExtraBoldItalicwebfont.svg#open_sansextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
