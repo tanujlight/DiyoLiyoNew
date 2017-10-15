@@ -134,6 +134,23 @@
                 }
             }
         })
+
+        .state("product", {
+            url: '/product',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/product.html',
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
         // .state("search-results", {
         //     url: '/search-results',
         //     views: {

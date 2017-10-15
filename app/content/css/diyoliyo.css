@@ -1,11 +1,18 @@
 /* header codes */
+header {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 header .navbar {
     background: #ffffff;
 	border: none;
-	border-bottom: 1px solid #3c5a99;
+    border-radius: 0px;
 	margin-bottom: 0;
     padding: 5px 0 3px;
-    position: fixed;
 }
 
 header .logo {
@@ -46,18 +53,10 @@ header .search-field-box .search-field {
     margin: 16px 10px 0;
 }
 
-header .search-field-box .search-field input:hover, header .search-field-box .search-field input:focus {
-
-}
-
 header .search-field-box .search-field input {
     padding-right: 30px;
-    width: 100px;
+    width: 20vw;
     transition: 0.5s width;
-}
-
-header .search-field-box .search-field input:hover, header .search-field-box .search-field input:focus {
-    width: 21vw;
 }
 
 header .search-field-box .search-field input:focus {
@@ -178,6 +177,34 @@ header .cart-button a:hover {
     color: #3c5a99;
 }
 
+header .bottom-header {
+    background: #3c5a99;
+    text-align: center;
+}
+header .bottom-header ul {
+    overflow: auto;
+    white-space: nowrap;
+}
+header .bottom-header ul li {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    color: #fff;
+}
+
+header .bottom-header ul li.contact-no {
+    margin-left: 30px;
+}
+
+header .bottom-header ul li a {
+    color: #fff;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+header .bottom-header ul li a:hover {
+    color: #dedb1a;
+}
+
 /* Media quires for header*/
 
 @media only screen and (max-width: 768px) {
@@ -249,7 +276,7 @@ header .cart-button a:hover {
         right: 53px;
     }
 
-    header .search-field-box .search-field input:hover, header .search-field-box .search-field input:focus {
+    header .search-field-box .search-field input {
         width: 35vw;
     }
 
@@ -419,28 +446,29 @@ footer .bottom-footer p {
 
 /* home page */
 .home-page {
-    padding-top: 74px;
+    padding-top: 103px;
     padding-bottom: 10px;
     background: #f3f7f8;
 }
 
-.home-page .banner {
-    position: relative;
-    background: url('../img/main-banner.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
+.home-page .banner .carousel-inner .item {
     height: calc(100vw * 0.24);
     min-height: 150px;
+    overflow: hidden;
 }
 
-.home-page .banner .overlay {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+.carousel .carousel-control {
+    left: 4%;
+    width: auto;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: none;
+    background: none;
+}
+
+.carousel .carousel-control.right {
+    left: auto;
+    right: 4%;
 }
 
 .home-page #top-section .mainContainer {
@@ -622,6 +650,12 @@ footer .bottom-footer p {
 
 @media only screen and (max-width: 420px) {
     .home-page {
-        padding-top: 65px;
+        padding-top: 94px;
     }
+}
+
+
+/* product description page css */
+.product-page {
+    padding-top: 74px;
 }
