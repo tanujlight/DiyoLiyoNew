@@ -193,6 +193,7 @@ header .bottom-header ul li {
 
 header .bottom-header ul li.contact-no {
     margin-left: 30px;
+    margin-right: 5px;
 }
 
 header .bottom-header ul li a {
