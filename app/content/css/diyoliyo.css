@@ -252,11 +252,19 @@ header .cart-button a:hover {
     header .search-field-box .search-field input:hover, header .search-field-box .search-field input:focus {
         width: 35vw;
     }
+
+    header .navbar-collapse.in {
+        overflow-y: visible;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     header .logo {
         width: 55px;
+    }
+
+    header .container {
+        padding: 0 5px;
     }
 
     header .header-right {
@@ -283,11 +291,11 @@ header .cart-button a:hover {
     }
 
     header .cart-button {
-        right: 45px;
+        right: 33px;
     }
 
     header .search-field-box {
-        right: 140px;
+        right: 125px;
     }
 
     header .search-field-box .search-field input {
@@ -503,7 +511,7 @@ footer .bottom-footer p {
 }
 
 .home-page #top-section .mainContainer .shops-container .shops-list .shops-list-slider .shops-list-slider-item:hover {
-    box-shadow: 0 0px 2px #bdbdbd;
+    box-shadow: 0 1px 2px #bdbdbd;
 }
 
 .home-page .shops-list .item-details {
@@ -563,18 +571,25 @@ footer .bottom-footer p {
     font-size: 40px;
     margin: 0px;
     position: absolute;
-    display: none;
+    opacity: 0.5;
 }
+
 .owl-carousel:hover .owl-buttons div {
-    display: block;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-buttons div span.fa-stack {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-prev {
-    left: -65px;
+    left: -40px;
     top: 28%;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
-    right: -65px;
+    right: -40px;
     top: 28%;
 }
 
@@ -592,16 +607,16 @@ footer .bottom-footer p {
 
 @media only screen and (max-width: 480px) {
     .owl-theme .owl-controls .owl-buttons div {
-        font-size: 30px;
+        display: none;
     }
 
-    .owl-theme .owl-controls .owl-buttons .owl-prev {
-        left: -52px;
-        top: 15%;
+    .home-page #top-section .mainContainer {
+        width: 98%;
+        margin: 30px auto;
     }
-    .owl-theme .owl-controls .owl-buttons .owl-next {
-        right: -52px;
-        top: 15%;
+
+    .home-page #top-section .mainContainer .shops-container {
+        padding: 10px;
     }
 }
 
