@@ -10,40 +10,38 @@
         
         $stateProvider
 
-        // .state("login", {
-        //     url: '/login',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/login.html',
-        //             controller: 'login'
-        //         },
+        .state("login", {
+            url: '/login',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/login.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
-        // .state("register", {
-        //     url: '/register',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/register.html',
-        //             controller: 'register'
-        //         },
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+        .state("register", {
+            url: '/register',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/register.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
         // .state("update-profile", {
         //     url: '/update-profile',
@@ -63,58 +61,55 @@
         //     }
         // })
 
-        // .state("forgot-password", {
-        //     url: '/forgot-password',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/forgot-password.html',
-        //             controller: 'forgotpassword'
-        //         },
+        .state("forgot-password", {
+            url: '/forgot-password',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/forgot-password.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
-        // .state("change-password", {
-        //     url: '/change-password',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/change-password.html',
-        //             controller: 'changepassword'
-        //         },
+        .state("change-password", {
+            url: '/change-password',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/change-password.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
-        // .state("update-password", {
-        //     url: '/updatepassword',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/update-password.html',
-        //             controller: 'updatepassword'
-        //         },
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+        .state("update-password", {
+            url: '/update-password',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/update-password.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
         .state("home", {
             url: '/home',
@@ -140,6 +135,8 @@
             views: {
                 "content@": {
                     templateUrl: 'app/templates/product.html',
+                    controller: 'product',
+                    controllerAs: 'vm'
                 },
 
                 "header@": {
@@ -169,74 +166,107 @@
         //     }
         // })
 
-        // .state("contact", {
-        //     url: '/contact',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/contact.html',
-        //             controller: 'contact'
-        //         },
+        .state("contact", {
+            url: '/contact',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/contact.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
-        // .state("privacy-policy", {
-        //     url: '/privacy-policy',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/privacy-policy.html',
-        //         },
+        .state("privacy-policy", {
+            url: '/privacy-policy',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/privacy-policy.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
-        // .state("about", {
-        //     url: '/about',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/about.html',
-        //         },
+        .state("about", {
+            url: '/about',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/about.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
-        // .state("terms-and-conditions", {
-        //     url: '/terms-and-conditions',
-        //     views: {
-        //         "content@": {
-        //             templateUrl: 'app/templates/terms-and-conditions.html',
-        //         },
+        .state("terms-and-conditions", {
+            url: '/terms-and-conditions',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/terms-and-conditions.html',
+                },
 
-        //         "header@": {
-        //             templateUrl: 'app/templates/header.html',
-        //         },
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
 
-        //         "footer@": {
-        //             templateUrl: 'app/templates/footer.html',
-        //         }
-        //     }
-        // })
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+
+        .state("shipping-policy", {
+            url: '/shipping-policy',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/shipping-policy.html',
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+
+        .state("refund-policy", {
+            url: '/refund-policy',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/refund-policy.html',
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
 
         $urlRouterProvider.otherwise('/home');
     }

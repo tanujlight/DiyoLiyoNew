@@ -150,7 +150,7 @@ header .header-right ul li.sub-menu-dropdown .dropdown-content {
     display: none;
     position: absolute;
     top: 30px;
-    left: -100%;
+    right: -100%;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -200,6 +200,7 @@ header .bottom-header ul li a {
     color: #fff;
     padding: 3px;
     text-transform: uppercase;
+    font-family: 'font_normal', helvetica, sans-serif;
 }
 
 header .bottom-header ul li a:hover {
@@ -278,7 +279,7 @@ header .bottom-header ul li a:hover {
     }
 
     header .search-field-box .search-field input {
-        width: 35vw;
+        width: 30vw;
     }
 
     header .navbar-collapse.in {
@@ -447,7 +448,6 @@ footer .bottom-footer p {
 
 /* home page */
 .home-page {
-    padding-top: 103px;
     padding-bottom: 10px;
     background: #f3f7f8;
 }
@@ -656,7 +656,326 @@ footer .bottom-footer p {
 }
 
 
+/* contact page css code*/
+
+.contact-area .contact-outer-area {
+    background: #ffffff;
+    padding: 25px 0 35px;
+    font-family: 'font_normal', helvetica, sans-serif;
+}
+
+.contact-area .contact-outer-area .contact-form h2 {
+    color: #3c5a99;
+    margin: 10px 0 10px;
+}
+.contact-area .contact-outer-area .address-map {
+    margin-top: 25px;
+}
+
+.contact-area .contact-outer-area .contact-form form {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(255,255,255);
+    padding: 25px 20px;
+    background: #eee;
+}
+
+.contact-outer-area .full-address h2 {
+    color: #3c5a99;
+    margin: 10px 0;
+}
+
+.contact-outer-area .full-address .address-details p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.contact-outer-area .full-address .address-details p i {
+    color: #3c5a99;
+}
+
+.contact-outer-area .full-address .address-details p a {
+    color: #3d3d3d;
+}
+
+.contact-outer-area .full-address .address-details p a:hover {
+    color: #3c5a99;
+}
+
+.contact-outer-area .contact-form form .field {
+    margin-bottom: 15px;
+}
+
+.contact-outer-area .contact-form form .field input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 15px 6px;
+    width: 100%;
+}
+
+.contact-outer-area .contact-form form .field textarea {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 15px 6px;
+    width: 100%;
+    resize: none;
+    height: 150px;
+}
+
+.contact-outer-area .contact-form form button.submit-button {
+    display: block;
+    outline: none;
+    border: 1px solid #3c5a99;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background: #3c5a99;
+    color: #fff;
+    padding: 8px 0;
+    transition: 0.3s all;
+    font-size: 16px;
+}
+
+.contact-outer-area .contact-form form button.submit-button:hover {
+    background: #fff;
+    color: #3c5a99;
+}
+
+
+/* authentication page css (login, register, forgot password, change password */
+
+.form-container .form-outer {
+    background: #eee;
+    border: 4px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 5px 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+    font-family: 'font_normal', helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .form-container .form-outer {
+        padding: 15px;
+    }
+}
+
+.form-container .form-outer h2 {
+    color: #3c5a99;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form-container .form-outer form {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(255,255,255);
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.form-container .form-outer form .field {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.form-container .form-outer form .checkbox-field {
+    border: none;
+}
+
+.form-container .form-outer form .field input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 8px 0 6px;
+    width: 100%;
+}
+
+.form-container .form-outer form .field textarea {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 8px 0 6px;
+    width: 100%;
+    resize: none;
+}
+
+.form-container .form-outer form .field input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 5px 0 0;
+}
+
+.form-container .form-outer form .field label {
+    display: inline-block;
+    cursor: pointer;
+    color: #3c5a99;
+}
+
+.form-container .form-outer form button {
+    display: block;
+    outline: none;
+    border: 2px solid #3c5a99;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background: #3c5a99;
+    color: #fff;
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+.form-container .form-outer form button:hover {
+    background: #fff;
+    color: #3c5a99;
+}
+
+.form-container .form-outer form button[disabled] {
+    opacity: 0.9;
+}
+
+.form-container .form-outer form .form-link {
+    line-height: 25px;
+}
+
+.form-container .form-outer form .form-link span {
+    font-size: 10px;
+}
+
+.form-container .form-outer form .form-link a {
+    color: #3c5a99 !important;
+    font-family: 'font_semibold', helvetica, sans-serif;
+}
+
+/* about us, privacy-policy, terms and conditions pages css*/
+.quicklink-page .page-outer-area {
+    background: #eee;
+    color: #000;
+    margin: 0 15px;
+    padding: 15px 40px 25px;
+    font-family: 'font_normal', helvetica, sans-serif;
+    box-shadow: 0 0px 0px 0px white, 0 -10px 0px 0px white, 3px 0 15px -4px rgba(0, 0, 0, 0.4), -3px 0 15px -4px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 550px) {
+    .quicklink-page .page-outer-area {
+        margin: 0 -15px;
+        padding: 15px 0 25px;
+    }
+}
+
+.quicklink-page .page-outer-area .page-content h3 {
+    color: #3c5a99;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.quicklink-page .page-outer-area .page-content a {
+    color: #3c5a99;
+}
+
+.quicklink-page .page-outer-area .page-content a:hover {
+    text-decoration: underline;
+}
+
+.quicklink-page .page-outer-area .page-content .heading h4 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: 'font_semibold', helvetica, sans-serif;
+}
+
+.quicklink-page .page-outer-area .page-content .heading p {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    font-family: 'font_normal',helvetica, sans-serif;
+}
+
+.quicklink-page .page-outer-area .page-content ol {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li {
+    background: #fff;
+    padding: 20px 20px 12px 40px;
+    margin: 20px 0;
+    counter-increment: item;
+    position: relative;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background: #fff;
+   border: 2px solid #3c5a99;
+   border-radius: 50%;
+   color: #3c5a99;
+   width: 40px;
+   height: 40px;
+   left: -18px;
+   top: 20%;
+   text-align: center;
+   position: absolute;
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 38px;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li h4 {
+    color: #3c5a99;
+    font-weight: 400;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li p span {
+    color: #3c5a99;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li ul {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.quicklink-page .page-outer-area .page-content ol > li ul li {
+    font-size: 14px;
+    list-style: disc;
+    line-height: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .quicklink-page .page-outer-area .page-content h3 {
+        margin-bottom: 15px;
+    }
+
+    .quicklink-page .page-outer-area .page-content .heading p {
+        line-height: 20px;
+    }
+
+    .quicklink-page .page-outer-area .page-content ol > li p {
+        line-height: 20px;
+    }
+
+    .quicklink-page .page-outer-area .page-content ol > li ul {
+        padding-left: 15px;
+    }
+}
+
 /* product description page css */
 .product-page {
-    padding-top: 74px;
 }

@@ -16,3 +16,7 @@ a, a:hover, a:active, a:focus {
     border: none;
     cursor: pointer !important;
 }
+
+.body-part {
+    padding-top: 103px;
+}
