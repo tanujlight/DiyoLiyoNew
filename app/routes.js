@@ -130,6 +130,25 @@
             }
         })
 
+        .state("products", {
+            url: '/products',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/products.html',
+                    controller: 'products',
+                    controllerAs: 'vm'
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+
         .state("product", {
             url: '/product',
             views: {
@@ -137,6 +156,40 @@
                     templateUrl: 'app/templates/product.html',
                     controller: 'product',
                     controllerAs: 'vm'
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+
+        .state("my-cart", {
+            url: '/my-cart',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/my-cart.html',
+                },
+
+                "header@": {
+                    templateUrl: 'app/templates/header.html',
+                },
+
+                "footer@": {
+                    templateUrl: 'app/templates/footer.html',
+                }
+            }
+        })
+
+        .state("checkout", {
+            url: '/checkout',
+            views: {
+                "content@": {
+                    templateUrl: 'app/templates/checkout.html',
                 },
 
                 "header@": {

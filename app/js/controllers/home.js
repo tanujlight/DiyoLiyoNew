@@ -11,6 +11,10 @@
     function home($scope, $state, $timeout) {
         var vm = this;
 
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+
         // owl slider function  
         vm.owlSliderCall = function() {
             console.log('slider start');
@@ -120,9 +124,9 @@
         }
         vm.addShopCall();
 
-        // open the shop page
-        $scope.openShop = function(){
-            $state.go("shop");
+        // open the product page
+        $scope.viewProduct = function(){
+            $state.go("product");
         }
     }
 })();

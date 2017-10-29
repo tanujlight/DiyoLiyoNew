@@ -12,20 +12,21 @@
         var vm = this;
 
         $(document).ready(function() {
-            // Instantiate EasyZoom instances
-            var $easyzoom = $('.easyzoom').easyZoom();
+            
+            // products-images changes 
+            $('.product-page .product-images li a').click(function() {
+                $('.product-page .product-images li').removeClass('active');
+                $(this).parents('li').addClass('active');
+                var imgSrc = $(this).find('img').attr("src");
+                var targetValue = $(this).parents('.product-image-container').find('.product-image a img');
+                targetValue.attr('src', imgSrc);
+            })
 
-            // Setup thumbnails example
-            var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
-
-            $('.thumbnails').on('click', 'a', function(e) {
-                var $this = $(this);
-
-                e.preventDefault();
-
-                // Use EasyZoom's `swap` method
-                api1.swap($this.data('standard'), $this.attr('href'));
-            });
+            $('.product-page .product-image a').click(function() {
+                var imgSrc = $(this).find('img').attr("src");
+                var targetValue = $(this).parents('.product-page').find('#product-big-image figure img');
+                targetValue.attr('src', imgSrc);
+            })
         })
     }
 })();

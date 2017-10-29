@@ -1,17 +1,47 @@
 <div class="product-page">
     <div class="container">
         <div class="item-description-container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 products-images">
+            <div id="product-big-image" class="modal" role="dialog">
+                <div class="modal-dialog">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <figure>
+                        <img src="app/content/img/products/p1.jpg">
+                    </figure>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-6 product-image-container">
+                    <div class="product-image">
+                        <a href="" data-toggle="modal" data-target="#product-big-image">
+                            <img src="app/content/img/products/p1.jpg" alt="product-img">
+                        </a>
+                    </div>
+                    <ul class="product-images">
+                        <li class="active">
+                            <a href="">
+                                <img src="app/content/img/products/p1.jpg" alt="product-img">
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="app/content/img/products/p4.jpg" alt="product-img">
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="app/content/img/products/p5.jpg" alt="product-img">
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-6 right-side">
                     <h2 class="item-title">DELISH 2500</h2>
                     <div class="price-details">
                         <div class="item-price">
                             <span class="final-price">Rs 450</span>
                             <span class="actual-price">Rs 500</span>
                         </div>
-                        <p class="shipping-charge">Shipping Charges: Rs 50</p>
+                        <p class="shipping-charge">Shipping Charges: <span>Rs 50</span></p>
                     </div>
                     <div class="item-attributes row">
                         <div class="form-group col-md-4 col-xs-6">
@@ -25,16 +55,17 @@
                         </div>
                         <div class="form-group col-md-4 col-xs-6">
                             <label for="quantity">Quantity</label>
-                            <input type="number" class="form-control" id="quantity">
+                            <input type="number" min="1" value="1" class="form-control" id="quantity">
                         </div>
                     </div>
                     <div class="item-description">
-                        <h4>Product Description</h4>
+                        <h4>Description</h4>
                         <p>
                             Milton hot case delish 2500, Lorem ipsum, dolar sit amet, milton hot case delish 2500, Lorem ipsum, dolar sit amet milton hot case delish 2500, Lorem ipsum, dolar sit amet. 
                         </p>
                     </div>
                     <div class="item-terms-condition">
+                        <h4>Terms & conditions</h4>
                         <ol>
                             <li>The color shown on the image may vary from the actual product color.</li>
                             <li>Product Delivered in 10-15 Working days. with 50 rupees of shipping charges.</li>

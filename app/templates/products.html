@@ -1,0 +1,29 @@
+<div class="all-products">
+    <section id="main-container">
+        <div class="heading row">
+            <h3 class="col-xs-8">Mens Fashion</h3>
+            <p class="col-xs-4">20 Results</p>
+        </div>
+        <div class="products-container">
+            <ul>
+                <li ui-sref="product" ng-repeat="x in vm.dummyJson">
+                    <div class="product">
+                        <figure>
+                            <img ng-src="{{x.image}}" alt="{{x.name}}">
+                        </figure>
+                        <div class="product-details">
+                            <p class="product-name" data-toggle="tooltip" data-placement="bottom" title="{{x.name}}">{{ x.name }}</p>
+                            <p class="product-price">
+                                <span class="actual-price">Rs 500</span>
+                                <span class="final-price">Rs 400</span>
+                            </p>
+                        </div>
+                        <div class="add-cart-button">
+                            <a href="#">Add Cart</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </section>
+</div>

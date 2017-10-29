@@ -1,0 +1,102 @@
+<!-- my cart area -->
+<div class="my-cart-container">
+    <div class="container">
+        <div class="cart-heading">
+            <h2>My Cart(3)</h2>
+        </div>
+        <div class="my-cart-products">
+            <div class="continue-shopping pull-left">
+                <a ui-sref="home" class="pull-left">Continue Shopping</a>
+            </div>
+            <div class="checkout-button clearfix">
+                <a ui-sref="checkout" class="pull-right">Checkout</a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Shipping Charges</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="app/content/img/products/p10.jpg">
+                                </figure>
+                            </td>
+                            <td class="name">Vagga T-shirt</td>
+                            <td class="price">Rs 500</td>
+                            <td class="quantity">
+                                <input type="number" min="1" name="quantity" value="1">
+                            </td>
+                            <td>Rs 50</td>
+                            <td>Rs 550</td>
+                            <td>
+                                <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="app/content/img/products/p12.jpg">
+                                </figure>
+                            </td>
+                            <td class="name">Samsung Phone</td>
+                            <td class="price">Rs 13000</td>
+                            <td class="quantity">
+                                <input type="number" min="1" name="quantity" value="1">
+                            </td>
+                            <td>Rs 0</td>
+                            <td>Rs 13000</td>
+                            <td>
+                                <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <figure>
+                                    <img src="app/content/img/products/p13.jpg">
+                                </figure>
+                            </td>
+                            <td class="name">Women Top</td>
+                            <td class="price">Rs 900</td>
+                            <td class="quantity">
+                                <input type="number" min="1" name="quantity" value="1">
+                            </td>
+                            <td>Rs 90</td>
+                            <td>Rs 990</td>
+                            <td>
+                                <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="grand-total">
+                            <td colspan="5" class="text-right">
+                                Grand Total :
+                            </td>
+                            <td class="price text-left" colspan="3">Rs 14540</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="my-cart-bottom">
+                <div class="continue-shopping pull-left">
+                    <a ui-sref="home" class="pull-left">Continue Shopping</a>
+                </div>
+                <div class="checkout-button clearfix">
+                    <a ui-sref="checkout" class="pull-right">Checkout</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--// my cart area -->
