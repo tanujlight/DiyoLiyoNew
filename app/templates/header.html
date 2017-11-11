@@ -1,4 +1,4 @@
-<header>
+<header ng-controller='header as vm'>
     <nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -24,9 +24,9 @@
                         <div class="dropdown">
                           Signup
                             <div class="dropdown-content">
-                                <a is-active-nav href="#/register">SignUp As Customer</a>
-                                <a is-active-nav href="javascript:;">SignUp As Vendor</a>
-                                <a is-active-nav href="javascript:;">SignUp As Partner</a>
+                                <a is-active-nav href="#/register">Customer</a>
+                                <a is-active-nav href="javascript:;">Vendor</a>
+                                <a is-active-nav href="javascript:;">Partner</a>
                             </div>
                         </div>
                     </li>
@@ -34,9 +34,9 @@
                         <div class="dropdown">
                             Login
                               <div class="dropdown-content">
-                                <a is-active-nav href="#/login">Login As User</a>
-                                <a is-active-nav href="#/login">Login As Vendor</a>
-                                <a is-active-nav href="#/login">Login As Partner</a>
+                                <a is-active-nav href="#/login">Customer</a>
+                                <a is-active-nav href="#/login">Vendor</a>
+                                <a is-active-nav href="#/login">Partner</a>
                             </div>
                         </div>
                     </li>
@@ -59,15 +59,15 @@
         </div>
     </nav>
     <div class="bottom-header">
-        <ul>
-            <li><a ui-sref="products">Men</a></li>
-            <li><a ui-sref="products">Women</a></li>
-            <li><a ui-sref="products">Kids</a></li>
-            <li><a ui-sref="products">Appliances</a></li>
-            <li><a ui-sref="products">Electronics</a></li>
-            <li><a ui-sref="products">Offer Zone</a></li>
-            <li><a ui-sref="products">New Arrivals</a></li>
-            <li><a ui-sref="products">Miscellaneous</a></li>
+        <ul class="categories">
+            <li ng-repeat="category in categories">
+                <a class="category-name" ng-click="subcategory($event)">{{ category.name }}</a>
+                <ul class="sub-categories">
+                    <li ng-repeat="x in category.subcategories">
+                        <a ui-sref="products">{{ x.name }}</a>
+                    </li>
+                </ul>
+            </li>
             <li class="contact-no">
                 <a href="tel:+91-9438405980">
                     <i class="fa fa-phone" aria-hidden="true"></i>

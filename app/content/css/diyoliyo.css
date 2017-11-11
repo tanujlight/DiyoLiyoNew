@@ -206,33 +206,67 @@ header .cart-button a:hover {
 }
 
 header .bottom-header {
-    background: #3c5a99;
-    text-align: center;
-    padding: 0 1%;
+    position: relative;
 }
-header .bottom-header ul {
+
+header .bottom-header .categories {
     overflow: auto;
+    background: #3c5a99;
     white-space: nowrap;
+    padding: 0 1%;
+    text-align: center;
 }
-header .bottom-header ul li {
+header .bottom-header .categories li {
     display: inline-block;
     margin: 5px 5px 5px 0;
     color: #fff;
 }
 
-header .bottom-header ul li.contact-no {
+header .bottom-header .categories li.contact-no {
     margin-left: 30px;
 }
 
-header .bottom-header ul li a {
+header .bottom-header .categories li a {
     color: #fff;
     padding: 3px;
     text-transform: uppercase;
     font-family: 'font_normal', helvetica, sans-serif;
 }
 
-header .bottom-header ul li a:hover {
+header .bottom-header .categories li a:hover {
     color: #dedb1a;
+}
+
+header .bottom-header .sub-categories {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 30px;
+    padding: 0px;
+    white-space: initial;
+    display: none;
+}
+
+header .bottom-header .sub-categories.active {
+    display: block;
+}
+
+header .bottom-header .sub-categories li {
+    display: inline-block;
+    padding: 2px;
+    margin: 5px;
+}
+
+header .bottom-header .sub-categories li a {
+    color: #3d3d3d;
+    font-family: 'font_normal', helvetica, sans-serif;
+    font-size: 15px;
+}
+
+header .bottom-header .sub-categories li a:hover {
+    color: #3c5a99;
 }
 
 /* Media quires for header*/
