@@ -173,6 +173,8 @@
             views: {
                 "content@": {
                     templateUrl: 'app/templates/my-cart.html',
+                    controller: 'myCart',
+                    controllerAs: 'vm'
                 },
 
                 "header@": {
